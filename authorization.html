@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="images/icons8-basketball-32.png"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome!</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/styles.css"
+      id="theme-link"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <link rel="stylesheet" href="css/authorization.css" />
+    <script src="js/translate.js"></script>
+  </head>
+</html>
+<body>
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header__bottom">
+        <nav class="header__nav">
+          <a class="header__logo logo" href="#">
+            <img class="logo__img" src="images/logo.svg" alt="Boosted logo" />
+          </a>
+
+          <ul class="header__list">
+            <button
+              id="theme-button"
+              class="header__item"
+              style="display: fixed"
+            >
+              Toggle Theme
+            </button>
+          </ul>
+          <ul class="header__list">
+            <button id="language-toggle" onclick="toggleLanguage()">
+              <img src="images/en.png" alt="English" id="language-icon" />
+            </button>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="page">
+      <form id="login-form">
+        <h2 class="looking__title">Sign in</h2>
+
+        <label for="login">Login<span>*</span></label>
+        <input type="text" id="login" required />
+
+        <label for="password">Password<span>*</span></label>
+        <input type="password" id="password" required />
+
+        <div class="buttons">
+          <button type="submit">Sign in</button>
+          <button type="button" id="button">Create new account</button>
+        </div>
+      </form>
+      <div id="register-form" style="display: none">
+        <form id="register">
+          <input
+            type="text"
+            id="phone-register"
+            placeholder="Phone number"
+            required
+          />
+          <span id="phone-error" class="error-message"></span>
+          <input
+            type="email"
+            id="email-register"
+            placeholder="Email"
+            required
+          />
+          <input
+            type="date"
+            id="dob-register"
+            placeholder="Date of Birth"
+            required
+          />
+          <span id="dob-error" class="error-message"></span>
+          <div class="generate-login">
+            <input
+              type="login"
+              id="login-register"
+              placeholder="Login"
+              required
+            />
+            <button id="generate-login" style="margin-left: 2em">
+              Generate Login
+            </button>
+          </div>
+          <div>
+            <input
+              type="password"
+              id="password-register"
+              placeholder="Password"
+              required
+            />
+            <button id="generate-password" style="margin-left: 2em">
+              Generate Password
+            </button>
+          </div>
+          <span id="password-error" class="error-message"></span>
+          <input
+            type="password"
+            id="confirm-password-register"
+            placeholder="Confirm Password"
+            required
+          />
+          <input type="text" id="fullname" placeholder="Full Name" required />
+          <input type="text" id="middlename" placeholder="Middle Name" />
+          <label for="terms">
+            <input type="checkbox" id="terms" required /> I agree to the Terms
+            and Conditions
+          </label>
+          <button type="submit" id="register-btn">Register</button>
+          <p id="register-error" class="error"></p>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer__bottom container">
+      <p class="footer__bottom-text">
+        © 2021 <span>Boosted USA</span> . All Rights Reserved.
+        <span>Terms of Service</span> . Built by <span>BH</span>
+      </p>
+    </div>
+  </footer>
+  <script src="js/authorization.js"></script>
+  <script src="js/theme.js"></script>
+</body>
