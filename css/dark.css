@@ -1,0 +1,16 @@
+body {
+  background: #252525;
+  color: #e5e5e5;
+}
+.header__top {
+  background-color: aquamarine;
+  color: #ff55ff;
+}
+.header__top {
+  background-color: #fbfbfb;
+  color: #ff55ff;
+}
+.header__item {
+  color: #fbfbfb;
+  border-bottom: 1px solid #252525;
+}
