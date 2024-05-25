@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="images/icons8-basketball-32.png"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BoostedUSA</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/dark.css"
+      id="theme-link"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="css/styles.css"
+      type="text/css"
+      id="theme-link"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/translate.js"></script>
+  </head>
+
+  <body>
+    <header class="header" id="header">
+      <div class="container">
+        <div class="header__top">
+          <p class="header__top-text" data-i18n="header-top-text">
+            Financing option available at checkout.
+          </p>
+        </div>
+
+        <div class="header__bottom">
+          <nav class="header__nav">
+            <a class="header__logo logo" href="#">
+              <img class="logo__img" src="images/logo.svg" alt="Boosted logo" />
+            </a>
+
+            <ul class="header__list">
+              <li class="header__item">
+                <a
+                  class="header__link"
+                  href="#electric-skateboards"
+                  data-i18n="electric-skateboards"
+                  >Electric Skateboards</a
+                >
+              </li>
+
+              <li class="header__item">
+                <a
+                  class="header__link"
+                  href="#boosted-rev__video-link"
+                  data-i18n="electric-scooters"
+                  >Electric Scooters</a
+                >
+              </li>
+
+              <li class="header__item">
+                <a
+                  class="header__link"
+                  href="#Accessories"
+                  data-i18n="accessories"
+                  >Accessories</a
+                >
+              </li>
+
+              <li class="header__item">
+                <a class="header__link" href="#gift-card" data-i18n="gift-card"
+                  >Gift Card</a
+                >
+              </li>
+
+              <li class="header__item">
+                <a class="header__link" href="#footer" data-i18n="more-info"
+                  >More Info</a
+                >
+              </li>
+              <button id="theme-button" class="header__item">Theme</button>
+            </ul>
+
+            <div class="header__link-box">
+              <a class="header__link-avatar" href="authorization.html">
+                <span class="header__icon">
+                  <img src="images/icon.svg" alt="icon" />
+                </span>
+              </a>
+              <a class="header__link-cart" href="#">
+                <span class="header__icon">
+                  <img src="images/cart.svg" alt="icon" />
+                </span>
+              </a>
+            </div>
+            <button class="header__burger burger">
+              <span class="sr-only"></span>
+              <span class="burger__line"></span>
+            </button>
+            <button id="language-toggle" onclick="toggleLanguage()">
+              <img src="images/en.png" alt="English" id="language-icon" />
+            </button>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="welcome">
+        <div class="welcome__container container">
+          <h1 class="welcome__title" data-i18n="welcome-title">
+            Welcome to Boosted USA
+          </h1>
+
+          <p class="welcome__text" data-i18n="welcome-text">
+            The Holy Grail of Electric Skateboards and One REVolutionary Scooter
+          </p>
+
+          <ul class="welcome__items">
+            <li class="welcome__item">
+              <a
+                class="welcome__link link-btn"
+                data-i18n="boosted-revs"
+                href="#"
+                >BOOSTED REVS</a
+              >
+            </li>
+
+            <li class="welcome__item">
+              <a
+                class="welcome__link link-btn"
+                data-i18n="boosted-boards"
+                href="#"
+                >BOOSTED BOARDS</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="sponsors">
+        <div class="container">
+          <h1 class="sr-only">our sponsors</h1>
+          <ul class="sponsors__items">
+            <li class="sponsors__item">
+              <a class="sponsors__link" href="#">
+                <img
+                  class="sponsors__img"
+                  src="images/sponsors/1.svg"
+                  alt="sponsors"
+                />
+              </a>
+            </li>
+
+            <li class="sponsors__item">
+              <a class="sponsors__link" href="#">
+                <img
+                  class="sponsors__img"
+                  src="images/sponsors/2.svg"
+                  alt="sponsors"
+                />
+              </a>
+            </li>
+
+            <li class="sponsors__item">
+              <a class="sponsors__link" href="#">
+                <img
+                  class="sponsors__img"
+                  src="images/sponsors/3.svg"
+                  alt="sponsors"
+                />
+              </a>
+            </li>
+
+            <li class="sponsors__item">
+              <a class="sponsors__link" href="#">
+                <img
+                  class="sponsors__img"
+                  src="images/sponsors/4.svg"
+                  alt="sponsors"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="looking">
+        <div class="container">
+          <h2 class="looking__title" data-i18n="looking-title">
+            Looking for Boosted Boards, or Boosted Revs?
+          </h2>
+
+          <p class="looking__text" data-i18n="looking-text">
+            Boosted USA acquired all of the remaining inventory directly from
+            Boosted. This means we have the electric skateboards and scooter you
+            all love and have been looking for. Get your hands on these highly
+            sought after products while supplies last.
+          </p>
+
+          <div class="looking__box">
+            <ul class="looking__list">
+              <li
+                class="looking__item"
+                style="background-image: url('images/looking-1.jpg')"
+              >
+                <a class="looking__link" data-i18n="shop-boosted" href="#">
+                  Shop Boosted Boards
+                  <span data-i18n="in-stock">In Stock</span>
+                </a>
+              </li>
+            </ul>
+
+            <ul class="looking__list">
+              <li
+                class="looking__item"
+                style="background-image: url('images/looking-2.jpg')"
+              >
+                <a class="looking__link" href="#">
+                  Shop Boosted Revs <span>In Stock</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="electric-skateboards" id="electric-skateboards">
+        <div class="electric-skateboards__container container">
+          <h2
+            class="electric-skateboards__title"
+            data-i18n="electric-skateboards-title"
+          >
+            <span>High-performance</span>
+            Electric Skateboards
+          </h2>
+          <p
+            class="electric-skateboards__text"
+            data-i18n="electric-skateboards-text"
+          >
+            Cruising campus, going to work or getting through that long list of
+            errands has never been easier or more fun.
+          </p>
+          <a
+            class="electric-skateboards__link link-btn"
+            href="#"
+            data-i18n="shop-now"
+          >
+            Shop Now
+          </a>
+        </div>
+      </section>
+
+      <section class="boosted-rev">
+        <div class="container">
+          <div class="boosted-rev__wrapper">
+            <img
+              class="boosted-rev__img"
+              src="images/boosted-rev/1.jpg"
+              alt="images"
+            />
+            <img
+              class="boosted-rev__img"
+              src="images/boosted-rev/2.jpg"
+              alt="images"
+            />
+
+            <div class="boosted-rev__content">
+              <h3 class="boosted-rev__title" data-i18n="boosted-rev">
+                Boosted Rev
+              </h3>
+
+              <p class="boosted-rev__text" data-i18n="boosted-rev-text">
+                There's never been an electric scooter quite like this. Speed
+                past traffic at 24 mph. Go up to 22 miles on a single charge.
+                You'll get there in no time at all. Stop and go with the roll of
+                your thumb. Its intuitive design means there’s almost no
+                learning curve.
+              </p>
+
+              <a
+                class="boosted-rev__link link-btn"
+                data-i18n="shop-now2"
+                href="#"
+              >
+                Shop Now
+              </a>
+            </div>
+          </div>
+
+          <ul class="boosted-rev__list">
+            <li
+              class="boosted-rev__item"
+              style="background-image: url('images/boosted-rev/3.jpg')"
+            >
+              <a class="boosted-rev__item-link" href="#">
+                Shop Boosted Stealth
+                <span>IN STOCK</span>
+              </a>
+            </li>
+
+            <li
+              class="boosted-rev__item"
+              style="background-image: url('images/boosted-rev/4.jpg')"
+            >
+              <a class="boosted-rev__item-link" href="#">
+                Shop Boosted Plus
+                <span>IN STOCK</span>
+              </a>
+            </li>
+
+            <li
+              class="boosted-rev__item"
+              style="background-image: url('images/boosted-rev/5.jpg')"
+            >
+              <a class="boosted-rev__item-link" href="#">
+                Shop Boosted Mini
+                <span>IN STOCK</span>
+              </a>
+            </li>
+          </ul>
+          <div class="boosted-rev__video-box">
+            <a
+              class="boosted-rev__video-link"
+              data-fancybox
+              href="https://youtu.be/78bXV1ZqQWI?si=hikapzN99r4JCNWI"
+              id="boosted-rev__video-link"
+            >
+              <img
+                class="boosted-rev__video-img"
+                src="images/video/1.jpg"
+                alt="video boosted"
+              />
+            </a>
+
+            <a
+              class="boosted-rev__video-link"
+              data-fancybox
+              href="https://youtu.be/oAQxk9dOJ8k?si=bWVXwQ25MZNBJ163"
+            >
+              <img
+                class="boosted-rev__video-img"
+                src="images/video/2.jpg"
+                alt="video boosted"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="accesories" id="Accessories">
+        <div class="container">
+          <h2 class="accesories__title" data-i18n="accessories-title">
+            Looking for Accessories?
+          </h2>
+
+          <div class="accesories__slider slider">
+            <div class="slider__card">
+              <img class="slider__img" src="images/slider/1.jpg" alt="rev" />
+              <a class="slider__link" href="#">Rev Tube</a>
+              <div class="slider__price">
+                <p class="slider__old-price">$16.00</p>
+                <p class="slider__new-price">$19.00</p>
+              </div>
+            </div>
+
+            <div class="slider__card">
+              <img class="slider__img" src="images/slider/2.jpg" alt="rev" />
+              <a class="slider__link" href="#">Boosted Rev Stem Catch</a>
+              <div class="slider__price">
+                <p class="slider__old-price">$19.00</p>
+                <p class="slider__new-price">$29.00</p>
+              </div>
+            </div>
+
+            <div class="slider__card">
+              <img class="slider__img" src="images/slider/3.jpg" alt="rev" />
+              <a class="slider__link" href="#">Stomp Brake Fender</a>
+              <div class="slider__price">
+                <p class="slider__sold">Sold Out</p>
+              </div>
+            </div>
+
+            <div class="slider__card">
+              <img class="slider__img" src="images/slider/4.jpg" alt="rev" />
+              <a class="slider__link" href="#">Boosted Belt Kit</a>
+              <div class="slider__price">
+                <p class="slider__old-price">$25.00</p>
+              </div>
+            </div>
+
+            <div class="slider__card">
+              <img class="slider__img" src="images/slider/5.jpg" alt="rev" />
+              <a class="slider__link" href="#">Bearing Service Kit</a>
+              <div class="slider__price">
+                <p class="slider__old-price">$50.00</p>
+              </div>
+            </div>
+
+            <div class="slider__card">
+              <img class="slider__img" src="images/slider/6.jpg" alt="rev" />
+              <a class="slider__link" href="#"
+                >Boosted Pulley / Belt Upgrade Kit</a
+              >
+              <div class="slider__price">
+                <p class="slider__old-price">$75.00</p>
+              </div>
+            </div>
+
+            <div class="slider__card">
+              <img class="slider__img" src="images/slider/7.jpg" alt="rev" />
+              <a class="slider__link" href="#">Boosted Skid Plates</a>
+              <div class="slider__price">
+                <p class="slider__old-price">$20.00</p>
+              </div>
+            </div>
+
+            <div class="slider__card">
+              <img class="slider__img" src="images/slider/3.jpg" alt="rev" />
+              <a class="slider__link" href="#">Rev Tube</a>
+              <div class="slider__price">
+                <p class="slider__old-price">$16.00</p>
+                <p class="slider__new-price">$19.00</p>
+              </div>
+            </div>
+          </div>
+
+          <ul class="accesories__items">
+            <li class="accesories__item accesories__item--fast">
+              <h4 class="accesories__item-title" data-i18n="go-fast1">
+                Go Fast
+              </h4>
+              <p class="accesories__text" data-i18n="go-fast2">
+                Boosted is known for its premium performance boards offering a
+                next-level experience.
+              </p>
+            </li>
+
+            <li class="accesories__item accesories__item--far">
+              <h4 class="accesories__item-title" data-i18n="go-far1">Go Far</h4>
+              <p class="accesories__text" data-i18n="go-far2">
+                With optional extended battery life, you can get wherever you
+                need to go reliably.
+              </p>
+            </li>
+
+            <li class="accesories__item accesories__item--safe">
+              <h4 class="accesories__item-title" data-i18n="go-safe1">
+                Go Safe
+              </h4>
+              <p class="accesories__text" data-i18n="go-safe2">
+                Safety is a #1 priority for Boosted, always wear a helmet when
+                riding.
+              </p>
+            </li>
+
+            <li class="accesories__item accesories__item--last">
+              <h4 class="accesories__item-title" data-i18n="build1">
+                Built to Last!
+              </h4>
+              <p class="accesories__text" data-i18n="build2">
+                Boosted products are engineered to last for years and are
+                extremely reliable.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="footer">
+      <div class="footer__container container">
+        <a class="footer__logo logo" href="#header">
+          <img class="logo__img" src="images/logo2.svg" alt="logo" />
+        </a>
+
+        <ul class="footer__items">
+          <li class="footer__item">
+            <h4 class="footer__title" data-i18n="explore">Explore</h4>
+          </li>
+
+          <li class="footer__item">
+            <a
+              class="footer__link"
+              href="#electric-skateboards"
+              data-i18n="electric-skateboards"
+            >
+              Electric Skateboards
+            </a>
+          </li>
+
+          <li class="footer__item">
+            <a
+              class="footer__link"
+              href="#boosted-rev__video-link"
+              data-i18n="electric-scooters"
+            >
+              Electric Scooters
+            </a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="#Accessories" data-i18n="accessories">
+              Accessories
+            </a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="#"> FAQs </a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="#" data-i18n="warranty"> Warranty </a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="#" data-i18n="guide">
+              Quick Start Guide
+            </a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="#" data-i18n="contact"> Contact </a>
+          </li>
+
+          <li class="footer__item">
+            <a
+              class="footer__link"
+              href="#"
+              id="gift-card"
+              data-i18n="gift-card"
+            >
+              Gift Card
+            </a>
+          </li>
+
+          <li class="footer__item">
+            <a class="footer__link" href="#" data-i18n="accessibility">
+              Accessibility Statement
+            </a>
+          </li>
+        </ul>
+
+        <ul class="footer__items">
+          <li class="footer__item">
+            <h4 class="footer__title" data-i18n="about">About Boosted USA</h4>
+          </li>
+
+          <li class="footer__item">
+            <p class="footer__text" data-i18n="footer-text">
+              Boosted empowers people everywhere to commute across their cities,
+              campuses, and communities in ways that were never before possible.
+              Boosted is solving one of the biggest problems people face each
+              day: transportation.
+            </p>
+          </li>
+
+          <li class="footer__item">
+            <p class="footer__adress">
+              CaliRides LLC - DBA Boosted USA <br />
+              1281 Andersen Drive Ste. K <br />
+              San Rafael, CA <br />
+              94901
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__bottom container">
+        <p class="footer__bottom-text">
+          © 2021 <span>Boosted USA</span> . All Rights Reserved.
+          <span>Terms of Service</span> . Built by <span>BH</span>
+        </p>
+        <ul class="footer__bottom-items">
+          <li class="footer__bottom-item">
+            <a
+              class="footer__bottom-link"
+              href="#"
+              style="background-image: url('images/pay/amex.svg')"
+            ></a>
+          </li>
+
+          <li class="footer__bottom-item">
+            <a
+              class="footer__bottom-link"
+              href="#"
+              style="background-image: url('images/pay/paypay.svg')"
+            ></a>
+          </li>
+
+          <li class="footer__bottom-item">
+            <a
+              class="footer__bottom-link"
+              href="#"
+              style="background-image: url('images/pay/gpay.svg')"
+            ></a>
+          </li>
+
+          <li class="footer__bottom-item">
+            <a
+              class="footer__bottom-link"
+              href="#"
+              style="background-image: url('images/pay/klarna.svg')"
+            ></a>
+          </li>
+
+          <li class="footer__bottom-item">
+            <a
+              class="footer__bottom-link"
+              href="#"
+              style="background-image: url('images/pay/master.svg')"
+            ></a>
+          </li>
+
+          <li class="footer__bottom-item">
+            <a
+              class="footer__bottom-link"
+              href="#"
+              style="background-image: url('images/pay/bpay.svg')"
+            ></a>
+          </li>
+
+          <li class="footer__bottom-item">
+            <a
+              class="footer__bottom-link"
+              href="#"
+              style="background-image: url('images/pay/v.svg')"
+            ></a>
+          </li>
+          <li class="footer__bottom-item">
+            <a
+              class="footer__bottom-link"
+              href="#"
+              style="background-image: url('images/pay/visa.svg')"
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="js/main.min.js"></script>
+    <script src="js/theme.js"></script>
+  </body>
+</html>
