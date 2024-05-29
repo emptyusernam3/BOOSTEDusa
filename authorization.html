@@ -9,11 +9,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome!</title>
+    <title>Warranty</title>
+    <link rel="stylesheet" href="css/authorization.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link
       rel="stylesheet"
       type="text/css"
-      href="css/styles.css"
+      href="css/style.css"
       id="theme-link"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,10 +24,6 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css" />
-
-    <link rel="stylesheet" href="css/authorization.css" />
-    <script src="js/translate.js"></script>
   </head>
 </html>
 <body>
@@ -37,102 +35,179 @@
             <img class="logo__img" src="images/logo.svg" alt="Boosted logo" />
           </a>
 
-          <ul class="header__list">
-            <button
-              id="theme-button"
-              class="header__item"
-              style="display: fixed"
-            >
-              Toggle Theme
-            </button>
-          </ul>
-          <ul class="header__list">
-            <button id="language-toggle" onclick="toggleLanguage()">
-              <img src="images/en.png" alt="English" id="language-icon" />
-            </button>
-          </ul>
+          <button
+            id="theme-button"
+            class="header__item lng-theme"
+            style="margin-left: 2em"
+          >
+            Theme
+          </button>
+          <select class="change-lang header__item" style="margin-left: 2em">
+            <option value="ru">RU</option>
+            <option value="en" selected>EN</option>
+          </select>
+          <a
+            href="index.html"
+            class="header__item lng-back"
+            style="margin-left: 2em"
+            >Back</a
+          >
         </nav>
       </div>
     </div>
   </header>
   <main>
-    <div class="page">
-      <form id="login-form">
-        <h2 class="looking__title">Sign in</h2>
-
-        <label for="login">Login<span>*</span></label>
-        <input type="text" id="login" required />
-
-        <label for="password">Password<span>*</span></label>
-        <input type="password" id="password" required />
-
-        <div class="buttons">
-          <button type="submit">Sign in</button>
-          <button type="button" id="button">Create new account</button>
-        </div>
-      </form>
-      <div id="register-form" style="display: none">
-        <form id="register">
-          <input
-            type="text"
-            id="phone-register"
-            placeholder="Phone number"
-            required
-          />
-          <span id="phone-error" class="error-message"></span>
-          <input
-            type="email"
-            id="email-register"
-            placeholder="Email"
-            required
-          />
-          <input
-            type="date"
-            id="dob-register"
-            placeholder="Date of Birth"
-            required
-          />
-          <span id="dob-error" class="error-message"></span>
-          <div class="generate-login">
-            <input
-              type="login"
-              id="login-register"
-              placeholder="Login"
-              required
-            />
-            <button id="generate-login" style="margin-left: 2em">
-              Generate Login
-            </button>
-          </div>
-          <div>
-            <input
-              type="password"
-              id="password-register"
-              placeholder="Password"
-              required
-            />
-            <button id="generate-password" style="margin-left: 2em">
-              Generate Password
-            </button>
-          </div>
-          <span id="password-error" class="error-message"></span>
-          <input
-            type="password"
-            id="confirm-password-register"
-            placeholder="Confirm Password"
-            required
-          />
-          <input type="text" id="fullname" placeholder="Full Name" required />
-          <input type="text" id="middlename" placeholder="Middle Name" />
-          <label for="terms">
-            <input type="checkbox" id="terms" required /> I agree to the Terms
-            and Conditions
-          </label>
-          <button type="submit" id="register-btn">Register</button>
-          <p id="register-error" class="error"></p>
-        </form>
+    <section class="box">
+      <div>
+        <section class="sign-in">
+          <h2
+            class="boosted-rev__title lng-signin signin"
+            style="margin-top: 2em"
+          >
+            Sign in
+          </h2>
+          <form action="">
+            <div>
+              <label for="login" id="login-in-label"
+                ><a class="lng-login">Login</a> <span>*</span></label
+              >
+              <input type="text" name="login" id="login" required />
+            </div>
+            <div>
+              <label for="password" id="password-in-label"
+                ><a class="lng-pass">Password</a> <span>*</span></label
+              >
+              <input type="password" name="password" id="password" required />
+            </div>
+            <div>
+              <button
+                type="button"
+                class="lng-signin-button signin-button hidden"
+                id="sign-in-send"
+              >
+                Sign in
+              </button>
+              <button type="button" class="lng-create-new" id="sign-up-button">
+                Create new account
+              </button>
+            </div>
+          </form>
+        </section>
+        <section class="sign-up hidden">
+          <h2 class="boosted-rev__title lng-signup" style="margin-top: 2em">
+            Sign up
+          </h2>
+          <form action="" class="form">
+            <div>
+              <label for="phone" id="phone-label"
+                ><a class="lng-phone">Phone</a> <span>*</span></label
+              >
+              <input type="number" name="phone" id="phone" required />
+            </div>
+            <div>
+              <label for="email" id="email-label"
+                ><a class="lng-email">Email</a> <span>*</span></label
+              >
+              <input type="email" name="email" id="email" required />
+            </div>
+            <div>
+              <label for="birth-date" id="birthday-label"
+                ><a class="lng-birth">Birth date</a> <span>*</span></label
+              >
+              <input type="date" name="birth-date" id="birth-date" required />
+            </div>
+            <div>
+              <label for="name" id="name-label"
+                ><a class="lng-name">Name</a> <span>*</span></label
+              >
+              <input type="text" name="name" id="name" required />
+            </div>
+            <div>
+              <label for="surname" id="surname-label"
+                ><a class="lng-surname">Surname</a> <span>*</span></label
+              >
+              <input type="text" name="surname" id="surname" required />
+            </div>
+            <div>
+              <label class="lng-patr" for="patronymic">Patronymic</label>
+              <input type="text" name="patronymic" id="patronymic" optional />
+            </div>
+            <div>
+              <label for="create-login" id="login-up-label"
+                ><a class="lng-login2">Login</a> <span>*</span></label
+              >
+              <input
+                type="text"
+                name="create-login"
+                id="create-login"
+                optional
+              />
+              <button
+                class="lng-gen-log"
+                type="button"
+                id="generate-login-button"
+              >
+                Generate login
+              </button>
+            </div>
+            <div>
+              <label for="create-password" id="password-up-label"
+                ><a class="lng-pass2">Password</a> <span>*</span></label
+              >
+              <input
+                type="password"
+                name="create-password"
+                id="create-password"
+                required
+              />
+              <button type="button" id="visible-password-button">👁</button>
+              <button
+                class="lng-gen-pass"
+                type="button"
+                id="generate-password-button"
+              >
+                Generate password
+              </button>
+            </div>
+            <div>
+              <label
+                class="lng-con-pass"
+                for="confirm-password"
+                id="confirm-password-label"
+                ><a class="">Confirm password</a> <span>*</span></label
+              >
+              <input
+                type="password"
+                name="confirm-password"
+                id="confirm-password"
+                required
+              />
+            </div>
+            <div>
+              <label for="terms-of-use" id="terms-of-use-label">
+                <a class="lng-i-agree">I read and agree with </a>
+                <a class="lng-term-reg" href="#">terms of use </a>
+                <span>*</span>
+              </label>
+              <input
+                type="checkbox"
+                name="terms-of-use"
+                id="terms-of-use"
+                required
+              />
+            </div>
+            <div>
+              <button type="button" class="lng-signup hidden" id="sign-up-send">
+                Sign up
+              </button>
+              <button class="lng-login-as" type="button" id="sign-in-button">
+                Login as existing account
+              </button>
+            </div>
+          </form>
+        </section>
       </div>
-    </div>
+    </section>
   </main>
   <footer>
     <div class="footer__bottom container">
@@ -142,6 +217,8 @@
       </p>
     </div>
   </footer>
-  <script src="js/authorization.js"></script>
+  <script src="js/authorization.js" type="module"></script>
+  <script src="js/languages.js"></script>
+  <script src="js/translate.js"></script>
   <script src="js/theme.js"></script>
 </body>
