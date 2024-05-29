@@ -1,0 +1,37 @@
+.boosted-rev {
+  background-image: url("../images/samokat.webp");
+  background-color: red;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 1000px;
+  transition: background-image 0.5s ease; /* Плавное изменение background-image в течение 0.5 секунды */
+}
+.boosted_rev_text {
+  text-align: right;
+  letter-spacing: 1px;
+  max-width: 488px;
+  margin-left: 50%;
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.image {
+  display: none;
+}
+
+.image.active {
+  display: block;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.pagination-button {
+  margin: 0 5px;
+}

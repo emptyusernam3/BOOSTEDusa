@@ -1,0 +1,49 @@
+main {
+  display: flex;
+  align-items: center;
+  background-color: aliceblue;
+  height: 1200px;
+  flex-direction: column;
+}
+.welcometext {
+  margin-top: 1em;
+  font-size: 30px;
+  background: linear-gradient(
+    45deg,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.question {
+  margin-top: 2em;
+  font-size: 18px;
+}
+.question > span:first-child {
+  color: crimson;
+}
+.answer {
+  margin-top: 0.5em;
+  font-size: 18px;
+}
+.answer > span:first-child {
+  color: orange;
+}
+.wrapper {
+  margin-left: 30em;
+  margin-right: 30em;
+  text-align: center;
+}
+@media only screen and (max-width: 762px) {
+  .wrapper {
+    margin-left: 0em;
+    margin-right: 0em;
+  }
+}

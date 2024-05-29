@@ -2,15 +2,66 @@ body {
   background: #252525;
   color: #e5e5e5;
 }
-.header__top {
-  background-color: aquamarine;
-  color: #ff55ff;
-}
-.header__top {
-  background-color: #fbfbfb;
-  color: #ff55ff;
-}
+
 .header__item {
   color: #fbfbfb;
   border-bottom: 1px solid #252525;
+}
+
+.theme-button {
+  color: white;
+}
+.looking__title {
+  color: white;
+}
+.looking__text {
+  color: white;
+}
+.boosted-rev__title {
+  color: white;
+}
+.boosted-rev__text {
+  color: white;
+}
+.container2 {
+  color: white;
+}
+.slider__price p:first-child {
+  color: white;
+}
+.wrapper {
+  background-color: #252525;
+}
+.faq-main {
+  background-color: #252525;
+}
+.question > span:last-child {
+  color: white;
+}
+.answer > span:last-child {
+  color: white;
+}
+#footer {
+  background-color: #252525;
+  color: #fff;
+}
+.footer__bottom {
+  background-color: #252525;
+  color: #ffff;
+}
+select {
+  color: #fff;
+}
+.element {
+  color: #fff;
+}
+.warranty-hello {
+  color: white;
+}
+.warranty-section {
+  background-color: #252525;
+  color: white;
+}
+main {
+  background-color: #252525;
 }

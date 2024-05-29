@@ -1505,10 +1505,12 @@ body.lock {
   font-size: 44px;
   line-height: 1.15;
   padding: 50px 0 15px 0;
+  color: #000;
 }
 .welcome__text {
   letter-spacing: 1px;
   margin-bottom: 25px;
+  color: #000;
 }
 .welcome__items {
   display: -webkit-box;
@@ -1650,7 +1652,13 @@ body.lock {
   width: 50px;
   height: 50px;
 }
-.looking__link > span {
+/*.looking__link > span {
+  display: block;
+  font-size: 18px;
+  line-height: 1.3;
+  margin-top: 15px;
+}*/
+.instock {
   display: block;
   font-size: 18px;
   line-height: 1.3;
@@ -1679,7 +1687,7 @@ body.lock {
     width: 30px;
     height: 30px;
   }
-  .looking__link > span {
+  .instock {
     margin-top: 5px;
   }
 }
@@ -1708,20 +1716,35 @@ body.lock {
   line-height: 1.12;
   padding-top: 45px;
   margin-bottom: 15px;
+  color: #000;
 }
-.electric-skateboards__title > span {
+
+/* .electric-skateboards__title > span {
   display: block;
   font-weight: 400;
   font-size: 15px;
   line-height: 1.25;
   letter-spacing: 1px;
   margin-bottom: 10px;
+} */
+.high-performance {
+  position: relative;
+  top: 3em;
+  text-align: center;
+  display: block;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.25;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  color: #000;
 }
 .electric-skateboards__text {
   text-align: center;
   letter-spacing: 1px;
   max-width: 488px;
   margin: 0 auto 20px;
+  color: #000;
 }
 .electric-skateboards__link {
   font-weight: 700;
@@ -2036,7 +2059,6 @@ body.lock {
   display: flex;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  background-color: #fff;
   padding: 20px 0 25px 0;
 }
 .footer__bottom-text {
@@ -2087,4 +2109,13 @@ body.lock {
   .footer__container {
     margin-bottom: 0;
   }
+}
+.test {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+.hidden {
+  display: none;
 }
