@@ -34,6 +34,21 @@
   </head>
 
   <body>
+    <div class="preloader">
+      <div class="preloader__row">
+        <div class="preloader__item"></div>
+        <div class="preloader__item"></div>
+      </div>
+    </div>
+    <script>
+      window.onload = function () {
+        document.body.classList.add("loaded_hiding");
+        window.setTimeout(function () {
+          document.body.classList.add("loaded");
+          document.body.classList.remove("loaded_hiding");
+        }, 500);
+      };
+    </script>
     <header class="header" id="header">
       <div class="container">
         <div class="header__top">
@@ -502,19 +517,15 @@
           </li>
 
           <li class="footer__item">
-            <a class="footer__link" href="faq.html"> FAQs </a>
+            <a class="link" href="faq.html"> FAQs </a>
           </li>
 
           <li class="footer__item">
-            <a class="footer__link lng-warranty" href="warranty.html">
-              Warranty
-            </a>
+            <a class="link lng-warranty" href="warranty.html"> Warranty </a>
           </li>
 
           <li class="footer__item">
-            <a class="footer__link lng-guide" href="guide.html">
-              Quick Start Guide
-            </a>
+            <a class="link lng-guide" href="guide.html"> Quick Start Guide </a>
           </li>
 
           <li class="footer__item">
@@ -544,23 +555,52 @@
           </li>
 
           <li class="footer__item">
-            <p class="footer__text lng-footer-text">
-              Boosted empowers people everywhere to commute across their cities,
-              campuses, and communities in ways that were never before possible.
-              Boosted is solving one of the biggest problems people face each
-              day: transportation.
+            <p class="footer__text lng-footer-text1">
+              Boosted empowers people everywhere to commute across
             </p>
+            <p class="footer__text lng-footer-text2" style="margin-top: -1em">
+              their cities, campuses, and communities in ways that were
+            </p>
+            <p class="footer__text lng-footer-text3" style="margin-top: -1em">
+              never before possible. Boosted is solving one of the
+            </p>
+            <p class="footer__text lng-footer-text4" style="margin-top: -1em">
+              biggest problems people face each day: transportation.
+            </p>
+            <p
+              class="footer__text lng-footer-text5"
+              style="margin-top: -1em"
+            ></p>
           </li>
 
           <li class="footer__item">
-            <p class="footer__adress">
+            <p class="footer__adress" id="address">
               CaliRides LLC - DBA Boosted USA <br />
               1281 Andersen Drive Ste. K <br />
               San Rafael, CA <br />
               94901
             </p>
           </li>
-         
+          <li class="footer__item">
+            <button id="map-button">
+              <img
+                src="images/icons8-geo-50.png"
+                alt="map"
+                style="width: 20px"
+              />
+            </button>
+          </li>
+          <div id="cover"></div>
+          <div id="footer-map">
+            <div>
+              <script
+                type="text/javascript"
+                charset="utf-8"
+                async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3e5bc69e0e5b59e7f28c89f8c2a79e4c46b3a4a95bc4978242dd8cc71f62c07d&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true"
+              ></script>
+            </div>
+          </div>
         </ul>
       </div>
       <div class="footer__bottom container">
@@ -632,7 +672,7 @@
             ></a>
           </li>
         </ul>
-        <select class="change-lang">
+        <select class="change-lang" style="height: 20px">
           <option value="ru">RU</option>
           <option value="en" selected>EN</option>
         </select>
