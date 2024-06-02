@@ -112,7 +112,7 @@ const langArr = {
     en: "Go Fast",
   },
   "go-fast2": {
-    ru: "Компания Boosted известна своими платами премиум-класса, предлагающими возможности нового уровня.",
+    ru: "Компания Boosted известна своими продуктами премиум-класса, предлагающими возможности нового уровня.",
     en: "Boosted is known for its premium performance boards offering a next-level experience.",
   },
   "go-far1": {
@@ -179,9 +179,25 @@ const langArr = {
     ru: "О Нас",
     en: "About Boosted USA",
   },
-  "footer-text": {
-    ru: "Boosted позволяет людям во всем мире передвигаться по своим городам, кампусам и общинам способами, которые раньше были невозможны. Boosted - это решение одной из самых больших проблем, с которыми люди сталкиваются каждый день. день: транспортировка.",
-    en: " Boosted empowers people everywhere to commute across their cities, campuses, and communities in ways that were never before possible Boosted is solving one of the biggest problems people face each day: transportation.",
+  "footer-text1": {
+    ru: "Boosted позволяет людям во всем мире передвигаться",
+    en: "Boosted empowers people everywhere to commute across",
+  },
+  "footer-text2": {
+    ru: "по своим городам, кампусам и общинам способами",
+    en: "their cities, campuses, and communities in ways that were",
+  },
+  "footer-text3": {
+    ru: "которые раньше были невозможны. Boosted решает одну из",
+    en: "never before possible. Boosted is solving one of the",
+  },
+  "footer-text4": {
+    ru: "самых серьезных проблем, с которыми люди сталкиваются ",
+    en: "biggest problems people face each day: transportation.",
+  },
+  "footer-text5": {
+    ru: "каждый день: транспортную.",
+    en: "",
   },
   back: {
     ru: "Назад",
