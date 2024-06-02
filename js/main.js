@@ -123,9 +123,17 @@ async function setGuestInLocalStorage() {
   }
   localStorage.setItem("currUser", "guest");
 }
+//переход на google maps
+var addressElement = document.getElementById("address");
+addressElement.addEventListener("click", function () {
+  var address = addressElement.innerText;
+  var encodedAddress = encodeURIComponent(address);
+  var googleMapsUrl = "https://www.google.com/maps/search/" + encodedAddress;
+  window.open(googleMapsUrl, "_blank");
+});
 //map
 document.addEventListener("DOMContentLoaded", function () {
-  document.getElementById("cover").addEventListener("click", function () {
+  document.getElementById("map-button").addEventListener("click", function () {
     document
       .getElementById("footer-map")
       .classList.toggle("footer-map-visible");
@@ -135,49 +143,16 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  document
-    .getElementById("button-close")
-    .addEventListener("click", function () {
-      document
-        .getElementById("footer-map")
-        .classList.toggle("footer-map-visible");
-      document.querySelector("body").classList.toggle("body-scroll");
-      document.getElementById("cover").classList.toggle("cover-button");
-    });
+  document.getElementById("cover").addEventListener("click", function () {
+    document
+      .getElementById("footer-map")
+      .classList.toggle("footer-map-visible");
+    document.querySelector("body").classList.toggle("body-scroll");
+    document.getElementById("cover").classList.toggle("cover-button");
+  });
 });
 //logout
 document.getElementById("exit").addEventListener("click", function () {
   localStorage.setItem("currUser", "guest");
   location.reload();
 });
-//pagination
-// Получаем элементы
-const boostedRevContainer = document.querySelector(".boosted-rev");
-const images = document.querySelectorAll(".image");
-const paginationButtons = document.querySelectorAll(".pagination-button");
-
-let currentIndex = 0; // Текущий индекс изображения
-
-// Функция для изменения изображения и активной кнопки
-function changeImage(index) {
-  // Удаляем класс 'active' у текущего изображения и кнопки
-  images[currentIndex].classList.remove("active");
-  paginationButtons[currentIndex].classList.remove("active");
-
-  // Добавляем класс 'active' для выбранного изображения и кнопки
-  images[index].classList.add("active");
-  paginationButtons[index].classList.add("active");
-
-  // Обновляем текущий индекс
-  currentIndex = index;
-}
-
-// Обработчик события клика для кнопок пагинации
-paginationButtons.forEach((button, index) => {
-  button.addEventListener("click", () => {
-    changeImage(index); // Изменение изображения и активной кнопки
-  });
-});
-
-// Изменение изображения и активной кнопки для изначального индекса
-changeImage(currentIndex);
