@@ -18,13 +18,12 @@ main {
   background: orange;
   padding: 2px 5px;
   border-radius: 5px;
-  margin-right: 1em;
+  margin-right: 10px;
 }
 form label {
   display: inline-block;
-  width: auto;
+  width: 135px;
 }
-
 .msg-phone::before {
   content: "✘";
 }
@@ -55,30 +54,68 @@ form label {
 .msg-match-password::before {
   content: "≠";
 }
-
+#visible-password-button {
+  height: 100%;
+  border-radius: 15px;
+  width: 23.6px;
+  padding: 0 0 2.1px 3.6px;
+  background: orange;
+  color: #555555;
+  margin: 0 10px;
+}
 #sign-up-send.hidden,
 #sign-in-send.hidden {
   display: inline-block;
-  background-color: rgb(219, 145, 7);
+  border-radius: 5px;
+  background: orange;
+  padding: 10px 20px;
+  color: #000000;
+  justify-content: center;
+  font-size: 15px;
+  line-height: 20px;
   cursor: not-allowed;
-  color: #474747;
-  cursor: default;
 }
 
 span {
   color: orange;
   font-size: 12px;
 }
-form button:first-child {
-  border-radius: 5px;
-  background: orange;
-  padding: 10px 20px;
-  color: #000;
-  justify-content: center;
-  font-size: 15px;
-  line-height: 20px;
+.sign-in form {
+  button:first-child {
+    border-radius: 5px;
+    background: orange;
+    padding: 10px 20px;
+    color: #000;
+    justify-content: center;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  button:last-child {
+    border-radius: 5px;
+    background: orange;
+    padding: 10px 20px;
+    color: #000000;
+    justify-content: center;
+    font-size: 15px;
+    line-height: 20px;
+  }
 }
-form button:last-child {
+
+form input {
+  background-color: white;
+}
+
+.hidden {
+  display: none;
+}
+.box form {
+  text-align: left;
+}
+form label {
+  display: inline-block;
+  width: 155px;
+}
+.signup-button2 {
   border-radius: 5px;
   background: orange;
   padding: 10px 20px;
@@ -87,21 +124,33 @@ form button:last-child {
   font-size: 15px;
   line-height: 20px;
 }
-form input {
-  background-color: white;
+.login-as-button {
+  border-radius: 5px;
+  background: orange;
+  padding: 10px 20px;
+  color: #000000;
+  justify-content: center;
+  font-size: 15px;
+  line-height: 20px;
 }
-.error {
-  color: red;
-  font-size: 12px;
-  margin-top: 5px;
+.gen-pass-button {
+  border-radius: 10px;
+  background: orange;
+  padding: 3px 5px;
+  color: #000000;
+  justify-content: center;
+  font-size: 15px;
+  line-height: 20px;
 }
-.hidden {
-  display: none;
+.gen-log-button {
+  border-radius: 10px;
+  background: orange;
+  padding: 3px 5px;
+  color: #000000;
+  justify-content: center;
+  font-size: 15px;
+  line-height: 20px;
 }
-.box form {
-  text-align: left;
-}
-
 /* .page {
   flex-direction: row;
 }
