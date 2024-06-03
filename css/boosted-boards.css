@@ -1,3 +1,15 @@
 .boosted-board {
   background-image: url("../images/skateboards-bg.jpg");
 }
+.main {
+  display: flex;
+}
+.electric-skateboards__container {
+  max-height: 1200px;
+  flex-direction: column;
+}
+@media only screen and (max-width: 320px) {
+  .electric-skateboards__container {
+    height: auto;
+  }
+}
