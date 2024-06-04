@@ -1,8 +1,8 @@
-main {
+.faq-main {
   display: flex;
   align-items: center;
   background-color: aliceblue;
-  height: 1200px;
+
   flex-direction: column;
 }
 .welcometext {
