@@ -62,6 +62,12 @@ select {
   background-color: #252525;
   color: white;
 }
+.main {
+  background-color: #252525;
+}
 main {
   background-color: #252525;
+}
+.exit-button {
+  color: white;
 }
